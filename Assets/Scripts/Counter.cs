@@ -11,7 +11,7 @@ public class Counter : MonoBehaviour
 
     public float Count => _count;
 
-    private void OnWorkCounter(bool isWork)
+    private void HandleWorkCounter(bool isWork)
     {
         if (isWork == false && _counterCoroutine != null)
         {
@@ -21,20 +21,20 @@ public class Counter : MonoBehaviour
         }
 
         Debug.Log("Start");
-        _counterCoroutine = StartCoroutine(CounterWait());
+        _counterCoroutine = StartCoroutine(CountCoroutine());
     }
 
     private void OnEnable()
     {
-        _counterController.WorkCounter += OnWorkCounter;
+        _counterController.WorkCounter += HandleWorkCounter;
     }
 
     private void OnDisable()
     {
-        _counterController.WorkCounter -= OnWorkCounter;
+        _counterController.WorkCounter -= HandleWorkCounter;
     }
 
-    private IEnumerator<WaitForSeconds> CounterWait()
+    private IEnumerator<WaitForSeconds> CountCoroutine()
     {
         WaitForSeconds waitForSeconds = new WaitForSeconds(_wait);
         

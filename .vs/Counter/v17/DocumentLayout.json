@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\i2016\\Counter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|C:\\Users\\i2016\\Counter\\assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|C:\\Users\\i2016\\Counter\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|c:\\users\\i2016\\counter\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|c:\\users\\i2016\\counter\\assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|C:\\Users\\i2016\\Counter\\assets\\scripts\\countercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CounterView.cs",
               "DocumentMoniker": "C:\\Users\\i2016\\Counter\\Assets\\Scripts\\CounterView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CounterView.cs",
@@ -39,13 +39,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Counter.cs",
               "DocumentMoniker": "C:\\Users\\i2016\\Counter\\Assets\\Scripts\\Counter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Counter.cs",
               "ToolTip": "C:\\Users\\i2016\\Counter\\Assets\\Scripts\\Counter.cs",
               "RelativeToolTip": "Assets\\Scripts\\Counter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCQAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T10:59:37.771Z",
               "EditorCaption": ""
@@ -60,8 +60,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CounterController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T11:15:10.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T11:15:10.662Z"
             }
           ]
         }
