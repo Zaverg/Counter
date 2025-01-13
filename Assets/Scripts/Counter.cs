@@ -6,30 +6,25 @@ public class Counter : MonoBehaviour
 {
     [SerializeField] private float _wait;
     [SerializeField] private float _count;
-    [SerializeField] private bool _isWorking;
+    private int _buttonNumber = 0;
 
     private Coroutine _counterCoroutine;
 
-    public event Action<float> ChangeCounterView;
-    public float Count => _count;
+    public event Action<float> Changed;
 
-    private void Start()
-    {
-        _isWorking = false;
-    }
+    public float Count => _count;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(_buttonNumber))
         {
-            _isWorking = !_isWorking;
-            HandleWorkCounter(_isWorking);
+            HandleWorkCounter();
         }
     }
 
-    private void HandleWorkCounter(bool isWork)
+    private void HandleWorkCounter()
     {
-        if (isWork == false && _counterCoroutine != null)
+        if (_counterCoroutine != null)
         {
             StopCoroutine(_counterCoroutine);
             return;
@@ -46,7 +41,7 @@ public class Counter : MonoBehaviour
         {
             yield return waitForSeconds;
             _count += 1;
-            ChangeCounterView?.Invoke(_count);
+            Changed?.Invoke(_count);
         }
     }
 }
