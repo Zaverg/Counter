@@ -16,8 +16,8 @@ public class CounterView : MonoBehaviour
         _counter.Changed -= ChangeTextCounter;
     }
 
-    private void ChangeTextCounter(float newCount)
+    private void ChangeTextCounter(float value)
     {
-        _text.text = newCount.ToString();
+        _text.text = value.ToString();
     }
 }

@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class Counter : MonoBehaviour
@@ -9,10 +9,16 @@ public class Counter : MonoBehaviour
     private int _buttonNumber = 0;
 
     private Coroutine _counterCoroutine;
+    private WaitForSeconds _waitForSeconds;
 
     public event Action<float> Changed;
 
     public float Count => _count;
+
+    private void Awake()
+    {
+        _waitForSeconds = new WaitForSeconds(_wait);
+    }
 
     private void Update()
     {
@@ -27,20 +33,20 @@ public class Counter : MonoBehaviour
         if (_counterCoroutine != null)
         {
             StopCoroutine(_counterCoroutine);
+            _counterCoroutine = null;
+
             return;
         }
 
         _counterCoroutine = StartCoroutine(Counting());
     }
 
-    private IEnumerator<WaitForSeconds> Counting()
+    private IEnumerator Counting()
     {
-        WaitForSeconds waitForSeconds = new WaitForSeconds(_wait);
-        
         while (true)
         {
-            yield return waitForSeconds;
-            _count += 1;
+            yield return _waitForSeconds;
+            _count++;
             Changed?.Invoke(_count);
         }
     }
